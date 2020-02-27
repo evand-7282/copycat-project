@@ -63,12 +63,13 @@ a {
   text-align: center;
 }
 
+/*
 #form-search {
   width: 450px;
   line-height: 32px;
   padding: 20px 10px;
 }
-
+*/
 .form #form-search {
   padding: 0 8px;
 }
@@ -142,7 +143,7 @@ bottom ul a:hover {
    text-align: center;
 
  }
-}
+
  #google {
    padding: 0;
  }
@@ -181,4 +182,3 @@ bottom ul a:hover {
    text-align: center;
 
  }
-}
