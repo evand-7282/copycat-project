@@ -1,3 +1,4 @@
+/* BASIC STYLES */
 body {
   margin: 0;
   padding: 0;
@@ -15,16 +16,17 @@ ul {
   list-style: none;
 }
 
-#navigation_bar {
+/* NAV BAR */
+#nav_bar {
   float: right;
 }
 
-#navigation_bar li {
+#nav_bar li {
   display: inline-block;
   padding: 8px;
 }
 
-#navigation_bar #sign_in {
+#nav_bar #sign_in {
   background: #4887ef;
   margin-right: 25px;
   padding: 7px 15px;
@@ -41,7 +43,7 @@ a {
   color: inherit;
 }
 
-.navigation-links a:hover {
+li.nav-links a:hover {
   text-decoration: underline;
 }
 
@@ -53,6 +55,7 @@ a {
   color: #fff;
 }
 
+/* GOOGLE AREA */
 .google #google_logo {
   text-align: center;
   display: block;
@@ -66,7 +69,10 @@ a {
   text-align: center;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 848eb731a79ca7e72156a7eba710baf4c03db718
 #form-search {
   width: 450px;
   line-height: 32px;
@@ -76,42 +82,58 @@ a {
 .form #form-search {
   padding: 0 8px;
 }
+
+/*#form-search:hover {
+  border-color: #e4e4e4;
+  padding-top: 0;
+}*/
+
 .buttons {
   text-align: center;
   padding-top: 30px;
   margin-bottom: 300px;
 }
 
+/* FOOTER */
 footer  {
   background: #f2f2f2;
   border-top: solid 2px #e4e4e4;
+/*   position: fixed; */
   bottom: 0;
   padding-bottom: 0;
   width: 100%;
 
 }
 
-bottom ul li {
+footer ul li {
   display: inline;
   color: #666666;
   font-size: 14px;
   padding: 13px;
 }
 
-bottom ul {
+footer ul {
   float: left;
   padding: 1px;
 }
 
-bottom ul a:hover {
+footer ul a:hover {
   text-decoration: underline;
 }
 
-.bottom-right {
+.footer-right {
   float: right;
 }
 
- #google {
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 400px) {
+
+ li.nav-links a {
+    display: none;
+  }
+
+ #google_logo {
    padding: 0;
  }
 
@@ -128,26 +150,34 @@ bottom ul a:hover {
    bottom: 0;
  }
 
- bottom ul {
+ footer ul {
    float: none;
    padding-bottom: 2px;
 
  }
 
- .bottom-left {
+ .footer-left {
    text-align: center;
    margin: auto;
    padding-top: 10px;
 
  }
 
- .bottom-right {
+ .footer-right {
    float: none;
    text-align: center;
 
  }
+}
 
- #google {
+@media screen and (max-width: 565px) {
+
+  li.nav-links a {
+    display: none;
+  }
+
+
+ #google_logo {
    padding: 0;
  }
 
@@ -161,27 +191,41 @@ bottom ul a:hover {
  }
 
  footer {
+/*    bottom: 0;
+   postion: absolute; */
    position:absolute;
    bottom:0;
    width:100%;
    height:60px;
  }
 
- bottom ul {
+ footer ul {
    float: none;
    padding-bottom: 2px;
 
  }
 
- .bottom-left {
+ .footer-left {
    text-align: center;
    margin: auto;
    padding-top: 10px;
 
  }
 
- .bottom-right {
+ .footer-right {
    float: none;
    text-align: center;
 
  }
+}
+
+
+
+
+
+
+
+
+
+
+
